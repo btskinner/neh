@@ -139,7 +139,7 @@ g <- map(sts |> pull(stname),
 ## save figures
 walk2(g,
       names(g),
-      ~ ggsave(file.path(fig_dir, paste0(.y, ".pdf")),
+      ~ ggsave(file.path(fig_dir, paste0(.y, ".png")),
                .x,
                width = plot_169_w,
                height = plot_169_h,
