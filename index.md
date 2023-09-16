@@ -5,4 +5,4 @@
 
 
 
-![Kentucky](./figures/ky.png)
+![Kentucky](./figures/KY.png)
