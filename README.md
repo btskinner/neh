@@ -1,6 +1,6 @@
 # State by state differences in per capita NEH funding, 1967 - 2020
 
-This repository contains the code to replicate the analyses found at [](https://www.btskinner.io/neh/).
+This repository contains the code to replicate the analyses found at [https://www.btskinner.io/neh/](https://www.btskinner.io/neh/).
 
 ## To run
 
@@ -41,7 +41,9 @@ install.packages(c("crosswalkr","fredr","tidyverse","zoo"))
 
 The NEH grant files for each decade from the 1960s to 2020s are required. The
 `make_data.R` script will download each file if they are not present in the
-`./data/raw` subdirectory. If you would rather download them manually, they can be found at [](https://apps.neh.gov/open/data/). You need the following:
+`./data/raw` subdirectory. If you would rather download them manually, they can
+be found at [https://apps.neh.gov/open/data/](https://apps.neh.gov/open/data/).
+You need the following:
 
 - `NEH_Grants1960s.csv`
 - `NEH_Grants1970s.csv`
