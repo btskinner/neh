@@ -14,8 +14,8 @@ Clone this directory and either:
 ```
 2. Run R scripts one by one (need to be in `./scripts` as working directory):
 
-1. `make_data.R`
-2. `analyze.R`
+    1. `make_data.R`
+    1. `analyze.R`
 
 Cleaned data will be placed in `./data/clean`. Figures will be placed in
 `./figures`.
