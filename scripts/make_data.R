@@ -82,8 +82,8 @@ dat_names <- paste0(stcrosswalk |> pull(stabbr), "POP")
 ## compute state-specific percentage of population
 df_pop <- map(dat_names,
               ~ fredr(series_id = .x,
-                      observation_start = as.Date("1965-01-01"),
-                      observation_end = as.Date("2023-01-01")) |>
+                      observation_start = as.Date("1966-01-01"),
+                      observation_end = as.Date("2022-01-01")) |>
                 mutate(year = year(date),
                        stabbr = str_sub(series_id, 1, 2)) |>
                 select(stabbr, year, pop = value)) |>
@@ -100,7 +100,7 @@ df_pop <- map(dat_names,
 ## create year from date and rescale data to real 2022 dollars
 cpi <- fredr(series_id = "USACPIALLAINMEI",
              observation_start = as.Date("1965-01-01"),
-             observation_end = as.Date("2023-01-01")) |>
+             observation_end = as.Date("2022-01-01")) |>
   mutate(year = year(date),
          adj = value / value[year == 2022]) |>
   select(year, adj)
@@ -149,7 +149,7 @@ df <- df |>
             by = "stabbr") |>
   select(stabbr, stname, year, awards, starts_with("appr"),
          starts_with("award"), pop, pop_pct) |>
-  filter(year < 2023)
+  filter(year < 2022)
 
 ## -----------------------------------------------------------------------------
 ## save data
