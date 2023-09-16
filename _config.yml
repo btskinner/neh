@@ -3,6 +3,7 @@
 # domain: btskinner.io
 # url: https://btskinner.io
 # baseurl: /neh/
+source: docs/
 
 # title: "State by state differences in per capita NEH funding, 1967 - 2020"
 # author: Benjamin Skinner
