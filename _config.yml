@@ -5,3 +5,6 @@ baseurl: /neh
 
 title: ""
 # author: Benjamin Skinner
+
+
+exclude: [data, scripts]
