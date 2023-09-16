@@ -7,29 +7,54 @@
 ![National Changes in per capita NEH funding over time](./figures/US.png)
 
 Established in the 1960s in the midst of the space race, the National Endowment
-for the Humanities has grown from an initial endowment of [$20
-million](https://www.neh.gov/about/history) to awarding nearly [$200 million in
+for the Humanities has grown from an initial endowment of [\$20
+million](https://www.neh.gov/about/history) to awarding nearly [\$200 million in
 FY2020](https://www.neh.gov/sites/default/files/inline-files/NEH%202020%20Annual%20Report.pdf).
 Among domestically awarded grants, this represents $473 spent per 1,000 persons
 in the United States in 2020.
 
 Of interest is how these funds have been awarded across the country. Despite its
-federal origins and purview, it is worth examining the how the distribution of
+federal origins and purview, it is worth examining how the distribution of
 dollars may differ across the states.
 
 ## Differences across the states
 
-![Changes in per capita NEH funding over time for Massachussetts](./figures/MA.png)
 ![Changes in per capita NEH funding over time for Pennsylvania](./figures/PA.png)
+
+Residents of Pennsylvania have received funding that has generally tracked the
+national trend over time. In the fiscal year 2020, approximately \$482 were
+spent for every 1000 residents of Pennsylvania. Residents of Iowa (\$535),
+Indiana (\$477), Minnesota (\$473), Oregon (\$415), and South Carolina (\$397)
+have similarly seen per capita award amounts that have tracked national trends.
+
+![Changes in per capita NEH funding over time for Massachusetts](./figures/MA.png)
+
+In comparison, residents of Massachusetts have consistently received large per
+capita NEH award amounts. Ending in 2020, Massachusetts residents received
+\$1,209 per 1,000 persons, their highest ever. Nonetheless, Massachusetts was
+given over \$900 (inflation adjusted to 2020 dollars) per 1,000 residents in
+five other years (1993, 2011, 2013, 2015, and 2019). A few other states, such as
+Alaska, Montana, and North Dakota have also consistently received high per
+capita funds. However, the sparse populations of these states mean that even
+comparatively smaller award amounts will be realized as higher per capita
+values.
+
 ![Changes in per capita NEH funding over time for Florida](./figures/FL.png)
+
+On the other side, the state of Florida has consistently had a low per capita
+award rate. In 2020, Floridians received the most they ever have, \$205 per 1000
+residents, which is second only to Texas's \$193. In no year since the start of
+the NEH have Florida residents received at or above the national average.
+Adjusting for inflation, Florida residents at \$205 received more than
+Massachusetts residents did only in their eight lowest funded years, 1968-1975.
 
 ## Links to all state figures
 
 Figures for the changes in per capita NEH spending by state over time for states
 are linked below.
 
-<div align="center">
-
+<div style = "margin-left: auto; margin-right: auto; width: 50%">
+            
 | State                             | State                              |
 |:----------------------------------|:-----------------------------------|
 | [Alabama](./figures/AL.png)       | [Montana](./figures/MT.png)        |
@@ -59,3 +84,13 @@ are linked below.
 | [Missouri](./figures/MO.png)      | [Wyoming](./figures/WY.png)        |
 
 </div>
+
+## Technical details
+
+Primary data for these analyses come from the [National Endowment for the
+Humanities](https://catalog.data.gov/organization/neh-gov). Inflation
+adjustments and interstitial state-level population estimates come from the
+[Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org) database.
+Dollar amounts for all figures have been inflation adjusted to real 2020
+dollars. To smooth out differences in award years, 3-year rolling averages were
+computed and used. All analyses were completed using the [R programming language](https://cran.r-project.org). Replication files can be found on [GitHub](https://github.com/btskinner/neh).
