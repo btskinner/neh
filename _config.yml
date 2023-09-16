@@ -1,5 +1,8 @@
 # _config.yml
 
-title: State by state differences in per capita NEH funding, 1967 - 2020
-description: ""
+domain: btskinner.io
+url: https://btskinner.io
+baseurl: /neh/
+
+title: "State by state differences in per capita NEH funding, 1967 - 2020"
 author: Benjamin Skinner
