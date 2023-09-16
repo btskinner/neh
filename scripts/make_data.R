@@ -24,10 +24,25 @@ dat_dir <- file.path(root, "data")
 ## NEH
 ## -------------------------------------
 
+## download NEH files if they don't exist in directory
+neh_fs <- paste0("NEH_Grants", seq(1960,2020,10), "s.csv")
+in_dir <- list.files(file.path(dat_dir, "raw"))
+to_get <- files[!c(files %in% in_dir)]
+
+if (length(to_get) > 0) {
+  ## neh baseurl
+  baseurl <- "https://securegrants.neh.gov/open/data/"
+  ## download those that are needed
+  walk(to_get,
+       ~ download.file(paste0(baseurl, .x),
+                       file.path(dat_dir, "raw", .x)))
+}
+
 ## get vector of NEH file names
-files <- list.files(file.path(dat_dir, "raw"), full.names = TRUE)
+files <- list.files(file.path(dat_dir, "raw"), "Grants", full.names = TRUE)
 
 ## column names from NEH_GrantsDictionary.pdf
+## (https://securegrants.neh.gov/open/data/NEH_GrantsDictionary.pdf)
 coln <- c("appno",
           "apptype",
           "inst",
