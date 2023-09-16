@@ -1,9 +1,8 @@
 ---
-author: Benjamin Skinner
 ---
 
 # State by state differences in per capita NEH funding, 1967 - 2020
-
+### _Benjamin Skinner_
 
 ![National Changes in per capita NEH funding over time](./figures/US.png)
 
