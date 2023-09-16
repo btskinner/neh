@@ -8,7 +8,7 @@
 ################################################################################
 
 ## libraries
-libs <- c("tidyverse", "zoo")
+libs <- c("tidyverse", "crosswalkr", "zoo")
 sapply(libs, require, character.only = TRUE)
 
 ## directories (works with makefile at root or within ./scripts subdir)

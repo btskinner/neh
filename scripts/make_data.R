@@ -27,7 +27,7 @@ dat_dir <- file.path(root, "data")
 ## download NEH files if they don't exist in directory
 neh_fs <- paste0("NEH_Grants", seq(1960,2020,10), "s.csv")
 in_dir <- list.files(file.path(dat_dir, "raw"))
-to_get <- files[!c(files %in% in_dir)]
+to_get <- neh_fs[!c(neh_fs %in% in_dir)]
 
 if (length(to_get) > 0) {
   ## neh baseurl
