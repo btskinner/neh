@@ -6,15 +6,29 @@
 
 ![National Changes in per capita NEH funding over time](./figures/US.png)
 
+Established in the 1960s in the midst of the space race, the National Endowment
+for the Humanities has grown from an initial endowment of [$20
+million](https://www.neh.gov/about/history) to awarding nearly [$200 million in
+FY2020](https://www.neh.gov/sites/default/files/inline-files/NEH%202020%20Annual%20Report.pdf).
+Among domestically awarded grants, this represents $473 spent per 1,000 persons
+in the United States in 2020.
+
+Of interest is how these funds have been awarded across the country. Despite its
+federal origins and purview, it is worth examining the how the distribution of
+dollars may differ across the states.
 
 ## Differences across the states
 
-![Changes in per capita NEH funding over time forKentucky](./figures/KY.png)
+![Changes in per capita NEH funding over time for Massachussetts](./figures/MA.png)
+![Changes in per capita NEH funding over time for Pennsylvania](./figures/PA.png)
+![Changes in per capita NEH funding over time for Florida](./figures/FL.png)
 
 ## Links to all state figures
 
 Figures for the changes in per capita NEH spending by state over time for states
 are linked below.
+
+<div align="center">
 
 | State                             | State                              |
 |:----------------------------------|:-----------------------------------|
@@ -44,3 +58,4 @@ are linked below.
 | [Mississippi](./figures/MS.png)   | [Wisconsin](./figures/WI.png)      |
 | [Missouri](./figures/MO.png)      | [Wyoming](./figures/WY.png)        |
 
+</div>
