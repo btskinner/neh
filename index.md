@@ -52,6 +52,8 @@ Florida residents at their highest per capita funding received more than
 Massachusetts residents only in the latter's eight lowest funded years,
 1968-1975.
 
+See below for links to figures of NEH funding changes over time for each state.
+
 ## Conclusion
 
 Over the course of the NEH's existence, a large amount of money has been
@@ -63,7 +65,7 @@ project funding and population trends. Furthermore, the societal impact of
 NEH-funded projects certainly cannot be fully described by a single financial
 metric. That said, it remains a worthwhile goal to investigate the distribution
 of NEH awards to make sure that all those living in the United States have an
-equitable chance to take part in [the full growth of a truly great
+equitable chance to take part in "[the full growth of a truly great
 society.](https://www.neh.gov/about/history)"
 
 ## Links to all state figures
