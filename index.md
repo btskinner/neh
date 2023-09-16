@@ -5,4 +5,4 @@
 
 
 
-![Kentucky]({{ site.baseurl }}/figures/ky.png)
+![Kentucky](./figures/ky.png)
