@@ -126,7 +126,8 @@ g <- map(sts |> pull(stname),
            guides(colour = "none") +
            labs(x = "Award year",
                 y = "Award amount per 1,000 residents (2020$)",
-                title = paste0(.x),
+                title = paste0("Changes in per capita NEH funding over time for ",
+                               .x),
                 caption = paste("Data:",
                                 "National Endowment for the Humanities,",
                                 "FRED")) +
@@ -145,6 +146,48 @@ walk2(g,
                height = plot_169_h,
                units = "in",
                dpi = "retina"))
+
+## create the same figure, but for national only
+## NOTES:
+## (1) need all states at low opacity
+## (2) need national text on RHS, but no state
+
+g <- ggplot(df_pc_m, aes(x = year, y = pc_amount_y)) +
+  geom_line(linewidth = 0.5) +
+  ## (1)
+  geom_line(data = df_pc,
+            aes(y = pc_amount, colour = stabbr), alpha = 0.15) +
+  scale_x_continuous(breaks = seq(1970, 2020, 5),
+                     minor_breaks = 1967:2020,
+                     expand = c(0, Inf)) +
+  coord_cartesian(xlim = c(1967, 2020),
+                  clip = "off") +
+  scale_y_continuous(labels = scales::dollar_format()) +
+  ## (2)
+  geom_text(data = df_pc_m |> filter(year == 2020),
+            aes(x = Inf, y = pc_amount_y,
+                label = paste0("National\n $", round(pc_amount_y))),
+            hjust = -0.1, size = 2) +
+  ## (7)
+  guides(colour = "none") +
+  labs(x = "Award year",
+       y = "Award amount per 1,000 residents (2020$)",
+       title = "Changes in per capita NEH funding over time",
+       caption = paste("Data:",
+                       "National Endowment for the Humanities,",
+                       "FRED")) +
+  theme_bw(base_size = 8) +
+  ## (8)
+  theme(plot.margin = unit(c(1,3.5,1,1), "lines"),
+        axis.text.x = element_text(hjust = 0.875))
+
+## save figure
+ggsave(file.path(fig_dir, "US.png"),
+       g,
+       width = plot_169_w,
+       height = plot_169_h,
+       units = "in",
+       dpi = "retina")
 
 ## -----------------------------------------------------------------------------
 ## end script
