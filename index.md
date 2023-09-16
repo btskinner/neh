@@ -52,6 +52,20 @@ Florida residents at their highest per capita funding received more than
 Massachusetts residents only in the latter's eight lowest funded years,
 1968-1975.
 
+## Conclusion
+
+Over the course of the NEH's existence, a large amount of money has been
+disbursed across the United States in support of the humanities. As this short
+analysis shows, people living in this country have experienced different levels
+financial support depending on their state of residence. Some of these
+differences are likely due to a complex interaction between the timing of
+project funding and population trends. Furthermore, the societal impact of
+NEH-funded projects certainly cannot be fully described by a single financial
+metric. That said, it remains a worthwhile goal to investigate the distribution
+of NEH awards to make sure that all those living in the United States have an
+equitable chance to take part in [the full growth of a truly great
+society.](https://www.neh.gov/about/history)"
+
 ## Links to all state figures
 
 Figures for the changes in per capita NEH spending by state over time for states
