@@ -56,8 +56,8 @@ in the latter's eight lowest funded years, 1968-1975.
 Figures for the changes in per capita NEH spending by state over time for states
 are linked below.
 
-<div style = "margin-left: auto; margin-right: auto; width: 50%">
-            
+<!-- <div style = "margin-left: auto; margin-right: auto; width: 50%"> -->
+          
 | State                             | State                              |
 |:----------------------------------|:-----------------------------------|
 | [Alabama](./figures/AL.png)       | [Montana](./figures/MT.png)        |
@@ -86,7 +86,7 @@ are linked below.
 | [Mississippi](./figures/MS.png)   | [Wisconsin](./figures/WI.png)      |
 | [Missouri](./figures/MO.png)      | [Wyoming](./figures/WY.png)        |
 
-</div>
+<!-- </div> -->
 
 ## Technical details
 
