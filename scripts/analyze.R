@@ -57,10 +57,15 @@ df_pc <- df |>
   select(stabbr, stname, year, starts_with("pc"), pop)
 
 ## compute national mean from states for comparison in figure
+## NOTE: using population weights for national mean, which has a subtly
+## different meaning for average (rather than simple average across states,
+## which is interesting from an "every state is equal" viewpoint), the
+## population-weighted average gives a better approximation of dollars spent per
+## person.
 df_pc_m <- df_pc |>
   group_by(year) |>
-  summarise(pc_awards_y = mean(pc_awards),
-            pc_amount_y = round(mean(pc_amount), 2))
+  summarise(pc_awards_y = weighted.mean(pc_awards, pop),
+            pc_amount_y = round(weighted.mean(pc_amount, pop), 2))
 
 ## save key value for line plot (this just saves
 avg20 <- df_pc_m |> filter(year == 2020) |> pull(pc_amount_y)
