@@ -1,4 +1,5 @@
 ---
+author: Benjamin Skinner
 ---
 
 # State by state differences in per capita NEH funding, 1967 - 2020
